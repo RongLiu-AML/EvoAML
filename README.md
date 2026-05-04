@@ -11,27 +11,15 @@ EvoAML bridges the gap between state-of-the-art AI research and practical, compl
 2. **Temporal Evolution Analysis**: Utilizes Dynamic Self-Attention Networks to predict and identify mutating money-laundering behaviors over time.
 3. **AMLA 2020 Compliance Engine**: Automatically translates anomalous AI detections into standardized Bank Secrecy Act (BSA) narrative templates for Suspicious Activity Reports (SARs).
 
-## 📅 Project Roadmap (Phased Development)
+## 📅 Project Roadmap (6-Phase Plan)
+For detailed technical breakdowns, see [development_phases.md](docs/planning/development_phases.md).
 
-### Phase 1: Foundation & Architecture Setup (Current)
-- [x] Define system architecture mapping research papers to regulatory requirements.
-- [x] Initialize Git repository and CI/CD pipelines.
-- [x] Design API interfaces for Core AI Engine and Compliance Adapters.
-
-### Phase 2: Graph-Driven Tracking Module Integration
-- [ ] Implement Heterogeneous Graph Construction from cross-industry transactions.
-- [ ] Integrate GNN embeddings for anomaly sub-graph detection.
-- [ ] Benchmark against traditional rule-based transaction monitoring systems.
-
-### Phase 3: Temporal Evolution & Behavior Analysis
-- [ ] Implement Dynamic Self-Attention mechanisms.
-- [ ] Train models on longitudinal transaction behavior data to detect typology mutations.
-- [ ] Connect Temporal output with the Graph module for cross-validation.
-
-### Phase 4: BSA/AMLA 2020 Compliance Engine & Deployment
-- [ ] Develop automated FinCEN SAR narrative generators.
-- [ ] Create Jupyter Notebook interactive simulations for regulators and compliance officers.
-- [ ] Finalize documentation and release v1.0.
+- **Phase 1:** Foundation & Compliance Architecture Setup ✅ (Current)
+- **Phase 2:** Heterogeneous Data Ingestion & Preprocessing
+- **Phase 3:** Graph-Driven Tracking Integration (GNN Module)
+- **Phase 4:** Temporal Behavior Evolution Analysis
+- **Phase 5:** BSA/AMLA 2020 Compliance Engine & SAR Generation
+- **Phase 6:** System Simulation, Visualization Dashboard & v1.0 Release
 
 ## 🚀 Quick Start
 See the `examples/` directory for demonstrations of cross-industry tracking and automated SAR generation workflows.
