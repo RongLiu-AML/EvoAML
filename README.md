@@ -29,3 +29,25 @@ EvoAML integrates multiple detection methodologies to provide comprehensive cove
 - **Phase 4:** Temporal Analysis Module ✅
 - **Phase 5:** Compliance Engine ✅
 - **Phase 6:** Visualization & Release ✅
+
+## Data Format
+
+EvoAML accepts transaction data in CSV format. The following columns are required:
+
+- `sender` (string): Source entity identifier
+- `receiver` (string): Destination entity identifier  
+- `amount` (float): Transaction amount in USD
+
+Optional columns:
+- `sector` (string): Industry sector (e.g., Energy, Finance, Logistics)
+- `timestamp` (string): Transaction date (ISO format preferred)
+
+### Example CSV
+```csv
+sender,receiver,amount,sector,timestamp
+Entity_001,Entity_002,50000,Energy,2024-01-15
+Entity_003,Entity_001,25000,Finance,2024-01-16
+Entity_004,Entity_005,75000,Logistics,2024-01-17
+```
+
+You can upload this CSV directly in the Streamlit dashboard to run the analysis on your own data.
