@@ -12,14 +12,14 @@ EvoAML bridges the gap between state-of-the-art AI research and practical, compl
 3. **AMLA 2020 Compliance Engine**: Automatically translates anomalous AI detections into standardized Bank Secrecy Act (BSA) narrative templates for Suspicious Activity Reports (SARs).
 
 ## 📅 Project Roadmap (6-Phase Plan)
-For detailed technical breakdowns, see [development_phases.md](docs/planning/development_phases.md).
-
-- **Phase 1:** Foundation & Compliance Architecture Setup ✅ (Current)
-- **Phase 2:** Heterogeneous Data Ingestion & Preprocessing
-- **Phase 3:** Graph-Driven Tracking Integration (GNN Module)
-- **Phase 4:** Temporal Behavior Evolution Analysis
-- **Phase 5:** BSA/AMLA 2020 Compliance Engine & SAR Generation
-- **Phase 6:** System Simulation, Visualization Dashboard & v1.0 Release
+- **Phase 1:** Foundation & Compliance Architecture Setup ✅
+- **Phase 2:** Heterogeneous Data Ingestion & Preprocessing ✅
+- **Phase 3:** Graph-Driven Tracking Integration (GNN Module) ✅
+- **Phase 4:** Temporal Behavior Evolution Analysis ✅
+- **Phase 5:** BSA/AMLA 2020 Compliance Engine & SAR Generation ✅
+- **Phase 6:** System Simulation, Visualization Dashboard & v1.0 Release ✅
 
 ## 🚀 Quick Start
-See the `examples/` directory for demonstrations of cross-industry tracking and automated SAR generation workflows.
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run the dashboard: `streamlit run app.py`
+3. See `examples/` for algorithmic workflows.
