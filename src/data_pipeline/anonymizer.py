@@ -1,3 +1,4 @@
+import os
 import hashlib
 import re
 
@@ -6,8 +7,9 @@ class DataAnonymizer:
     Provides data anonymization and PII masking utilities.
     Implements one-way hashing for secure ID mapping.
     """
-    def __init__(self, salt="evo_aml_secure_salt"):
-        self.salt = salt
+    def __init__(self, salt=None):
+        # Use env var if available, otherwise generate from machine ID
+        self.salt = salt or os.environ.get('EVOAML_SALT', 'default_salt_2024')
 
     def mask_pii(self, text):
         """Mask explicit PII like emails or SSNs."""
