@@ -56,10 +56,10 @@ class GraphTracker:
                 score += 0.3
                 factors.append("High Influence")
                 
-            # Check incoming/outgoing volume
-            in_vol = sum(self.graph.predecessors(node))
-            out_vol = sum(self.graph.successors(node))
-            if in_vol > 5 or out_vol > 5:
+            # Check incoming/outgoing edge count (not volume)
+            in_degree = self.graph.in_degree(node)
+            out_degree = self.graph.out_degree(node)
+            if in_degree > 5 or out_degree > 5:
                 score += 0.2
                 factors.append("High Transaction Volume")
                 
